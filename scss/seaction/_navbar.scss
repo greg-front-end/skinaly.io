@@ -1,0 +1,138 @@
+.navbar {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  right: 0;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+  }
+}
+
+.menu {
+  position: fixed;
+  z-index: 0;
+  top: 80px;
+  width: 100%;
+  left: 0;
+  transform: translateY(0%);
+  &__nav {  
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+  }
+  &__nav-items {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  &__link {
+    color: #ffffff;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+
+  &-btn {
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid rgba(#510bba, 0.1);
+    border-left: 1px solid rgba(#510bba, 0.1);
+    height: 80px;
+    width: 100px;
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 30px;
+    }
+    &__line {
+      display: block;
+      width: 20px;
+      height: 3px;
+      background-color: #89a9eb;
+    }
+  }
+}
+.menu_active {
+  transform: translateY(-100%);
+}
+.menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary;
+  width: 100%;
+  height: 60px;
+}
+
+
+.logo {
+
+  &__text {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: 14px;
+    color: #6b6b6b;
+  }
+}
+.navbar {
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
+    height: 40px;
+    line-height: 20px;
+  }
+}
+
+.navbar {
+
+  &__mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    min-width: 11%;
+    height: 40px;
+    line-height: 20px;
+  }
+
+  &__phone{
+    font-size: 19px;
+    font-weight: bold;
+    color: $text-color;
+  }
+  &__phone-landline {
+    font-size: 19px;
+    font-weight: bold;
+    color: $text-color;
+  }
+
+  &__worktime {
+    color: #6b6b6b;
+  }
+
+  &__landline {
+    line-height: 20px;
+    display: flex;
+    flex-direction:column;
+    min-width: 15%;
+    text-align: right;
+  }
+
+  &__email {
+    color: #6b6b6b;
+    text-align: right;
+  }
+}
+
+

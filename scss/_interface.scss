@@ -1,0 +1,22 @@
+body {
+  @include light;
+  color: $text-color;
+}
+.button-o {
+  text-transform: uppercase;
+  border: 2px solid #507fe1;
+  padding: 17px 22px;
+  font-size: 12px;
+  font-weight: bold;
+  color: $primary;
+  background-color: #ffffff;
+}
+.button {
+  text-transform: uppercase;
+  border: 2px solid #507fe1;
+  padding: 25px 45px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: $primary
+}
