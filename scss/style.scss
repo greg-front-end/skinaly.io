@@ -1,6 +1,6 @@
 // Базовые настройка сетки
 @import 'grid';
-@import './seaction/hero';
+
 
 
 // Настройки шрифтов
@@ -15,4 +15,7 @@
 
 // шапка сайта 
 @import './seaction/navbar';
+
+// выплывающая шапка сайта 
+@import './seaction/hero';
 
