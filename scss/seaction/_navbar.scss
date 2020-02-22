@@ -18,7 +18,8 @@
   top: 80px;
   width: 100%;
   left: 0;
-  transform: translateY(0%);
+  transform: translateY(-100%);
+  transition: 1s;
   &__nav {  
     display: flex;
     justify-content: center; 
@@ -59,7 +60,8 @@
   }
 }
 .menu_active {
-  transform: translateY(-100%);
+  transition: 1s;
+  transform: translateY(0%);
 }
 .menu-wrap {
   display: flex;

@@ -13,7 +13,7 @@
   <header class="header">
 
     <div class="conteiner">
-      <div class="menu menu_active">
+      <div class="menu">
         <div class="menu-wrap">
           <div class="menu__nav">
             <ul class="menu__nav-items">
@@ -77,5 +77,22 @@
     <!-- /.hero -->
   </header>
   <!-- /.header -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+  $(function () {
+    var link = $('.menu-btn');
+    var menu = $('.menu');
+    link.on('click', function (event) {
+      event.preventDefault();
+      menu.toggleClass('menu_active');
+    });
+    close.on('click', function (event) {
+      event.preventDefault();
+      menu.toggleClass('menu_active');
+    });
+  });
+</script>
 </body>
 </html>
