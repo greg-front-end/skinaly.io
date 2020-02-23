@@ -2,3 +2,32 @@
   margin: 0px auto;
   max-width: 1170px;
 }
+
+@media (max-width:668px) {
+  .conteiner {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px  20px;
+  }
+}
+@media (min-width:669px) and (max-width:968px) {
+  .conteiner {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px  60px;
+  }
+}
+@media (min-width:969px) and (max-width:1199px) {
+  .conteiner {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px  60px;
+  }
+}
+@media (min-width:969px) and (max-width:1199px) {
+  .conteiner {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px  60px;
+  }
+}

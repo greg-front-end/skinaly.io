@@ -13,7 +13,9 @@
     font-size: 30px;
   }
   &__button {
-    max-width: 20%;
+    padding: 18px 10px;
+    font-size: 18px;
+    max-width: 24%;
   }
  }
 .hero-wrap {
@@ -28,5 +30,77 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+}
+@media (max-width: 520px) {
+  .hero {
+    background: #f1f1f1 url('../../img/слайд\ 2.png') no-repeat center top 80px;
+    background-size: contain;
+    left: 0;
+    right: 0;
+    min-height: 400px;
+    &__title {
+      font-size: 24px;
+      max-width: 50%;
+    }
+    &__subtitle {
+      font-size: 28px;
+    }
+    &__button {
+      font-size: 12px;
+      padding: 12px 10px;
+      max-width: 200px;
+    }
+  }
+  .hero-wrap {
+    min-height: 540px;
+  }
+}
+@media (min-width: 521px) and (max-width: 968px) {
+  .hero {
+    background: #f1f1f1 url('../../img/слайд\ 2.png') no-repeat center top 80px;
+    background-size: contain;
+    left: 0;
+    right: 0;
+    min-height: 400px;
+    &__title {
+      font-size: 26px;
+      max-width: 30%;
+    }
+    &__subtitle {
+      font-size: 30px;
+    }
+    &__button {
+      font-size: 14px;
+      padding: 16px 10px;
+      max-width: 240px;
+    }
+  }
+  .hero-wrap {
+    min-height: 580px;
+  }
+}
+@media (min-width: 969px) and (max-width: 1199px) {
+  .hero {
+    background: #f1f1f1 url('../../img/слайд\ 2.png') no-repeat center top 80px;
+    background-size: contain;
+    left: 0;
+    right: 0;
+    min-height: 400px;
+    &__title {
+      font-size: 30px;
+      max-width: 23%;
+    }
+    &__subtitle {
+      font-size: 34px;
+    }
+    &__button {
+      font-size: 16px;
+      padding: 16px 10px;
+      max-width: 240px;
+    }
+  }
+  .hero-wrap {
+    min-height: 640px;
   }
 }

@@ -138,3 +138,145 @@
 }
 
 
+@media (max-width:520px) {
+
+  .navbar {
+    &__logo {
+      display: none;
+    }
+    &__mobile {
+      display: none;
+    }
+    &__landline {
+      display: none;
+    }
+    &__button {
+      width: 200px;
+      padding: 10px;
+    }
+  }
+  
+  .menu {
+    &-btn {
+      height: 80px;
+      width: 60px;
+    }
+    &__nav-items {
+      padding: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      line-height: 25px;
+    }
+  }
+  .menu-wrap {
+    height: 100%;
+  }
+}
+@media (min-width: 521px) and (max-width: 768px) {
+  .navbar {
+    &__mobile {
+      display: none;
+    }
+    &__landline {
+      display: none;
+    }
+    &__button {
+      width: 200px;
+      padding: 10px;
+    }
+  }
+
+  .logo {
+    &__text {
+      font-size: 16px;
+    }
+    &__description {
+      font-size: 12px;
+    }
+    }
+
+  .menu {
+    &-btn {
+      height: 80px;
+      width: 60px;
+    }
+    &__nav-items {
+      padding: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      line-height: 25px;
+    }
+  }
+  .menu-wrap {
+    height: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+  .navbar {
+    &__landline {
+      display: none;
+    }
+    &__button {
+      width: 200px;
+      padding: 10px;
+    }
+    &__phone {
+      font-size: 16px;
+    }
+    &__worktime {
+      font-size: 12px;
+    }
+  }
+  .logo {
+  &__text {
+    font-size: 16px;
+  }
+  &__description {
+    font-size: 12px;
+  }
+  }
+  .menu {
+    &-btn {
+      height: 80px;
+      width: 60px;
+    }
+    &__nav-items {
+      padding: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      line-height: 25px;
+    }
+  }
+  .menu-wrap {
+    height: 100%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .navbar {
+    &__logo {
+      min-width: 20%;
+    }
+    &__button {
+      width: 200px;
+      padding: 10px;
+    }
+    &__phone {
+      font-size: 16px;
+    }
+    &__worktime {
+      font-size: 12px;
+    }
+    &__phone-landline {
+      font-size: 16px;
+    }
+    &__email {
+      font-size: 12px;
+    }
+  }
+  .menu {
+    &__nav-items {
+      width: 80%;
+    }
+  }
+  
+}
