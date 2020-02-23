@@ -1,5 +1,5 @@
  .hero {
-  background: #f1f1f1 url('../../img/mainbg.png') no-repeat center top 80px;
+  background: #f1f1f1 url('/./img/mainbg.png') no-repeat center top 80px;
   background-size: contain;
   left: 0;
   right: 0;
@@ -34,7 +34,7 @@
 }
 @media (max-width: 520px) {
   .hero {
-    background: #f1f1f1 url('../../img/mainbg.png') no-repeat center top 80px;
+    background: #f1f1f1 url('/./img/mainbg.png') no-repeat center top 80px;
     background-size: contain;
     left: 0;
     right: 0;
@@ -58,7 +58,7 @@
 }
 @media (min-width: 521px) and (max-width: 968px) {
   .hero {
-    background: #f1f1f1 url('../../img/mainbg.png') no-repeat center top 80px;
+    background: #f1f1f1 url('/./img/mainbg.png') no-repeat center top 80px;
     background-size: contain;
     left: 0;
     right: 0;
@@ -82,7 +82,7 @@
 }
 @media (min-width: 969px) and (max-width: 1199px) {
   .hero {
-    background: #f1f1f1 url('../../img/mainbg.png') no-repeat center top 80px;
+    background: #f1f1f1 url('/./img/mainbg.png') no-repeat center top 80px;
     background-size: contain;
     left: 0;
     right: 0;
