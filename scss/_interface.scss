@@ -11,12 +11,43 @@ body {
   color: $primary;
   background-color: #ffffff;
 }
+.bg-secondary {
+  background-color: $bg-secondary;
+}
 .button {
   text-transform: uppercase;
   border: 2px solid #507fe1;
-  padding: 25px 45px;
+  padding: 20px 40px;
   font-size: 12px;
   font-weight: bold;
   color: #ffffff;
   background-color: $primary
+}
+.input {
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+input[type="checkbox"] {
+  display: none;
+  &:checked + label::before {
+      background-color: $primary;
+    }
+  }
+  .checkbox{
+  &__label {
+    display: flex;
+    align-items: center;
+    margin-right: 42px;
+    &:hover {
+      cursor: pointer;
+    }
+    &::before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      border: 1px solid #dddddd;
+      margin-right: 20px; 
+    }
+  }
 }
