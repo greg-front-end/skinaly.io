@@ -4,7 +4,6 @@
 }
 .form-conteiner {
   margin: 0px auto;
-  // max-width: 850px;
 }
 
 @media (max-width:668px) {
@@ -12,6 +11,9 @@
     width: 100%;
     margin: 0px auto;
     padding: 0px  20px;
+  }
+  .section-title {
+    font-size: 24px;
   }
 }
 @media (min-width:669px) and (max-width:968px) {

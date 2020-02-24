@@ -2,6 +2,29 @@ body {
   @include light;
   color: $text-color;
 }
+.section {
+
+    &-title {
+      font-size: 30px;
+      text-align: center;
+      @include bold; 
+      text-transform: uppercase;
+    }
+    &__title {
+        padding: 100px 0px;
+    }
+}
+@media (max-width:567px) {
+  .section {
+    &__title {
+      padding: 60px 0px;
+    }
+  }
+  .section-title {
+    font-size: 24px;
+  }
+}
+
 .button-o {
   text-transform: uppercase;
   border: 2px solid #507fe1;

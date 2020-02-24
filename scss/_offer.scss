@@ -1,13 +1,13 @@
 
 .offer { 
-  padding: 0px 0;
+  padding: 100px 0;
   
   &-block {
     background: #fff url('../img/0165.png') no-repeat center right;
     box-sizing: content-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
     padding: 80px;
-    margin-top: -200px;
+    margin-top: -300px;
   }
   
   &__title {
@@ -113,9 +113,6 @@
       display: block;
       font-size: 17px;
       margin: 15px 0px 15px 0px;
-    }
-    &__group {
-      // margin-bottom: 15px;
     }
   }
   .input {
