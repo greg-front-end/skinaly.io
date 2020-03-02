@@ -1,0 +1,104 @@
+.blog {
+  padding-bottom: 60px;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+
+  &__title {
+    font-size: 24px;
+    @include bold;
+  }
+
+  &__link-more {
+    color: $primary;
+    font-size: 16px;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &-card {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+
+    &__image {
+      height: 200px;
+      overflow: hidden;
+    }
+
+    &__text {
+      display: flex;
+      min-height: 80px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__card {
+      margin-bottom: 70px;
+    }
+  }
+}
+
+@media (min-width: 968px) and (max-width: 1199px) {
+  .blog {
+
+    &-card {
+      margin: 10px;
+    }
+  }
+
+  .blog-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 967px) {
+  .blog {
+    &-card {
+      margin: 10px;
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__link-more {
+      font-size: 16px;
+    }
+  }
+
+  .blog-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .blog {
+    &__title {
+      margin-right: 10px;
+      font-size: 14px;
+    }
+
+    &__link-more {
+      font-size: 12px;
+    }
+  }
+
+  .blog-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

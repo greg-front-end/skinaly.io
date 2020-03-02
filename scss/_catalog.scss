@@ -1,4 +1,7 @@
  .catalog {
+   background-color: #f5f6f8;
+   padding-bottom: 70px;
+
    &-block {
      display: flex;
      justify-content: space-between;
@@ -38,15 +41,24 @@
        object-position: inherit;
        display: block;
      }
+
    }
 
    &-like {
+     text-align: center;
+   }
+
+   &__description {
+     margin-top: 20px;
+     margin-bottom: 40px;
+     display: block;
      text-align: center;
    }
  }
 
  .catalog-link {
    width: 100%;
+
 
    &__more {
      display: flex;
