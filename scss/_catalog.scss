@@ -1,0 +1,128 @@
+ .catalog {
+   &-block {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+   }
+
+   &__card {
+     margin-bottom: 30px;
+   }
+
+   &-card {
+     max-width: 50%;
+     position: relative;
+     box-shadow: 7px 5px 21px 0px rgba(0, 0, 0, 0.1);
+
+     &__buttons {
+       position: absolute;
+       bottom: 0;
+       right: 0;
+     }
+
+     &__tag {
+       position: absolute;
+       top: 0;
+       left: 0;
+       padding: 10px;
+       margin: 10px;
+       font-size: 12px;
+       text-transform: uppercase;
+       color: #ffffff;
+       background-color: rgba($primary, 0.6);
+     }
+
+     &__imge {
+       max-width: 100%;
+       object-fit: none;
+       object-position: inherit;
+       display: block;
+     }
+   }
+
+   &-like {
+     text-align: center;
+   }
+ }
+
+ .catalog-link {
+   width: 100%;
+
+   &__more {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+ }
+
+ @media (min-width: 968px) and (max-width: 1199px) {
+   .catalog {
+     &-card {
+       max-width: 48%
+     }
+   }
+ }
+
+ @media (max-width: 967px) {
+   .catalog {
+     &-block {
+       justify-content: center;
+     }
+
+     &-card {
+       max-width: 100%
+     }
+   }
+ }
+
+ @media (max-width: 520px) {
+   .catalog {
+     &-block {
+       justify-content: center;
+     }
+
+     &-card {
+       max-width: 100%;
+
+       &__tag {
+         padding: 5px;
+         font-size: 10px;
+       }
+     }
+   }
+
+   .button {
+     &-fitting {
+       padding: 8px;
+       text-transform: uppercase;
+       color: $primary;
+       font-size: 8px;
+       margin-right: -4px;
+       background-color: #fff;
+     }
+
+     &-add {
+       background-color: lighten($primary, 10%);
+       padding: 8px;
+       color: #ffffff;
+       font-size: 8px;
+       margin-right: -4px;
+     }
+
+     &-like {
+       background-color: $primary;
+       height: 25.6px;
+       width: 30px;
+
+       &__imge {
+         width: 12px;
+         vertical-align: middle;
+       }
+     }
+   }
+
+   .button_lg {
+     font-size: 10px;
+     padding: 8px;
+   }
+ }

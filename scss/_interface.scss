@@ -2,24 +2,32 @@ body {
   @include light;
   color: $text-color;
 }
+
+img {
+  max-width: 100%;
+}
+
 .section {
 
-    &-title {
-      font-size: 30px;
-      text-align: center;
-      @include bold; 
-      text-transform: uppercase;
-    }
-    &__title {
-        padding: 100px 0px;
-    }
+  &-title {
+    font-size: 30px;
+    text-align: center;
+    @include bold;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    padding: 100px 0px;
+  }
 }
+
 @media (max-width:567px) {
   .section {
     &__title {
       padding: 60px 0px;
     }
   }
+
   .section-title {
     font-size: 24px;
   }
@@ -34,9 +42,11 @@ body {
   color: $primary;
   background-color: #ffffff;
 }
+
 .bg-secondary {
   background-color: $bg-secondary;
 }
+
 .button {
   text-transform: uppercase;
   border: 2px solid #507fe1;
@@ -44,33 +54,67 @@ body {
   font-size: 12px;
   font-weight: bold;
   color: #ffffff;
-  background-color: $primary
+  background-color: $primary;
+
+  &-fitting {
+    padding: 10px;
+    text-transform: uppercase;
+    color: $primary;
+    font-size: 11px;
+    margin-right: -4px;
+    background-color: #fff;
+  }
+
+  &-add {
+    background-color: lighten($primary, 10%);
+    padding: 10px;
+    color: #ffffff;
+    font-size: 11px;
+    margin-right: -4px;
+  }
+
+  &-like {
+    background-color: $primary;
+    height: 33.6px;
+    width: 30px;
+
+    &__imge {
+      vertical-align: middle;
+    }
+  }
 }
+
+
 .input {
   height: 80px;
   padding: 10px;
   border: 1px solid #dddddd;
 }
+
 input[type="checkbox"] {
   display: none;
-  &:checked + label::before {
-      background-color: $primary;
-    }
+
+  &:checked+label::before {
+    background-color: $primary;
   }
-  .checkbox{
+}
+
+.checkbox {
   &__label {
     display: flex;
     align-items: center;
     margin-right: 42px;
+
     &:hover {
       cursor: pointer;
     }
+
     &::before {
       content: '';
       width: 30px;
       height: 30px;
       border: 1px solid #dddddd;
-      margin-right: 20px; 
+      margin-right: 20px;
     }
   }
 }
