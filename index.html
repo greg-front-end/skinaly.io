@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/null-style.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Skinaly</title>
+  <link rel="stylesheet" href="css/twentytwenty.css">
 </head>
 
 <body>
@@ -20,11 +21,11 @@
           <div class="menu__nav">
             <ul class="menu__nav-items">
               <li><a href="#" class="menu__link">Главная</a></li>
-              <li><a href="#" class="menu__link">Продукция</a></li>
-              <li><a href="#" class="menu__link">Каталог</a></li>
-              <li><a href="#" class="menu__link">Примеры работ</a></li>
-              <li><a href="#" class="menu__link">Стоимость дилерам</a></li>
-              <li><a href="#" class="menu__link">О Алекси</a></li>
+              <li><a href="#features" class="menu__link">Преимущества</a></li>
+              <li><a href="#catalog" class="menu__link">Каталог</a></li>
+              <li><a href="#price" class="menu__link">Цены и виды скинали</a></li>
+              <li><a href="#factor" class="menu__link">О производсве</a></li>
+              <li><a href="#contacts" class="menu__link">Контакты</a></li>
             </ul>
           </div>
         </div>
@@ -44,8 +45,8 @@
           </button>
 
           <div class="logo navbar__logo">
-            <strong class="logo__text">Мебель от Лекси для души</strong>
-            <span class="logo__description">Кухни Алекси от души</span>
+            <strong class="logo__text">Фабрика Скинали №1</strong>
+            <span class="logo__description">стекла для кухни</span>
           </div>
           <!-- /.navbar__logo -->
 
@@ -57,7 +58,7 @@
             <a class="navbar__phone-landline" href="tel:+7 499 1234567">+7 499 123-45-67</a>
             <a class="navbar__email" href="mailto:info@mail.cu">info@mail.cu</a>
           </div>
-          <button class="button-o navbar__button">Получить консультацию</button>
+          <a href="#offer" class="button-o navbar__button">Получить консультацию</a>
         </div>
       </div>
       <!-- /.conteiner -->
@@ -71,7 +72,7 @@
               Гарантия качества и минимальной цены на кухни
             </h1>
             <span class="hero__subtitle">от 3 000 р/м2</span>
-            <button class="button hero__button">Заказать кухню</button>
+            <a href="#offer" class="button hero__button">Заказать кухню</a>
           </div>
         </div>
       </div>
@@ -81,25 +82,32 @@
   <!-- /.header -->
 
   <div class="main">
-    <div class="bg-secondary">
+    <div class="bg-secondary" id="offer">
       <div class="offer">
         <div class="conteiner form-conteiner">
-          <div class="offer__block offer-block">
+          <div class="offer__block offer-block  offer-block__calc-bg">
             <h2 class="offer__title">Оставьте заявку</h2>
             <span class="offer__subtitle">И получите скиду 40% на изготовление кухни</span>
             <form action="#" class="form offer__form">
               <div class="form__row">
                 <div class="form__group">
                   <label for="" class="form__label">Тип кухни</label>
-                  <input type="text" class="input form__input">
+                  <input type="hidden" name="type" id='select-type' value="С печатью" class="input form__input">
+                  <div class="select form__select">
+                    <div class="select__checked">С печатью</div>
+                    <ul class="select__dropdown">
+                      <li class="select__option" data-value="С печатью">С печатью</li>
+                      <li class="select__option" data-value="Без печати">Без печати</li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="form__group">
                   <label for="" class="form__label">Высота, см</label>
-                  <input type="text" class="input form__input">
+                  <input type="number" class="input form__input">
                 </div>
                 <div class="form__group">
                   <label for="" class="form__label">Длина, см</label>
-                  <input type="text" class="input form__input">
+                  <input type=number" class="input form__input">
                 </div>
               </div>
               <div class="form__row form__row-checkbox">
@@ -135,7 +143,7 @@
       <!-- /.offer -->
     </div>
     <!-- /.seaction -->
-    <section class="features seaction">
+    <section class="features seaction" id="features">
       <div class="conteiner">
         <h2 class="section-title section__title">Наши преимуества</h2>
         <div class="features-block">
@@ -181,7 +189,7 @@
       <!-- /.conteiner -->
       </seaction>
       <!-- /.features seaction -->
-      <section class="section catalog">
+      <section class="section catalog" id="catalog">
         <div class="conteiner">
           <h2 class="section-title section__title">Каталог скинали</h2>
           <div class="catalog-block">
@@ -347,7 +355,7 @@
           <!-- /.blog-list -->
         </div>
       </section>
-      <section class="section price">
+      <section class="section price" id="price">
         <div class="conteiner">
           <h2 class="section-title section__title">Цены и виды скинали</h2>
           <!-- /.section-title section__title -->
@@ -562,13 +570,241 @@
         <!-- /.conteiner -->
       </section>
       <!-- /.section works -->
+
+      <section class="section before">
+        <div class="conteiner">
+          <h2 class="section-title section__title">До и После</h2>
+          <div class="before-slider-wrap">
+            <div class="before-slider">
+              <div class="before-slider__item">
+                <div class="before-after">
+                  <img src="img/sample-before.png" alt="">
+                  <img src="img/sample-after.png" alt="">
+                </div>
+              </div>
+              <div class="before-slider__item">
+                <div class="before-after">
+                  <img src="img/sample-before.png" alt="">
+                  <img src="img/sample-after.png" alt="">
+                </div>
+              </div>
+              <div class="before-slider__item">
+                <div class="before-after">
+                  <img src="img/sample-before.png" alt="">
+                  <img src="img/sample-after.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- /.section-title section__title -->
+            <div class="before-slider-arrows">
+              <button class="arrow arrow__left">
+                <img src="img/left.png" alt="">
+              </button>
+              <button class="arrow arrow__right">
+                <img src="img/right.png" alt="">
+              </button>
+            </div>
+          </div>
+          <!-- /.before-slider-wrap -->
+        </div>
+        <!-- /.conteiner -->
+      </section>
+      <!-- /.section before -->
+
+      <section class="section reviews">
+        <div class="conteiner">
+          <h2 class="section-title section__title">
+            Отзывы наших клиентов
+          </h2>
+          <!-- /.section-title section__title -->
+          <div class="reviews-slider reviews-slider-after before">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+                asperiores fuga assumenda atque dicta? At suscipit eligendi ad, veniam tempore, provident fuga rerum
+                nisi ratione eveniet minima vel quidem corporis?
+              </div>
+              <!-- /.reviews-slider__text -->
+              <img src="img/coment-1.png" alt="" class="reviews-slider__image"><span
+                class="reviews-slider__name">Екатерина Иванова <br> Mocква</span> <!-- /.reviews-slider__name -->
+            </div>
+            <!-- /.reviews-slider__item -->
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+                asperiores fuga assumenda atque dicta? At suscipit eligendi ad, veniam tempore, provident fuga rerum
+                nisi ratione eveniet minima vel quidem corporis?
+              </div>
+              <!-- /.reviews-slider__text -->
+              <img src="img/coment-2.png" alt="" class="reviews-slider__image"><span
+                class="reviews-slider__name">Екатерина Иванова <br> Mocква</span> <!-- /.reviews-slider__name -->
+            </div>
+            <!-- /.reviews-slider__item -->
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+                asperiores fuga assumenda atque dicta? At suscipit eligendi ad, veniam tempore, provident fuga rerum
+                nisi ratione eveniet minima vel quidem corporis?</div>
+              <!-- /.reviews-slider__text -->
+              <img src="img/coment-3.png" alt="" class="reviews-slider__image"><span class="reviews-slider__name">Михаил
+                Иванов <br> Mocква</span> <!-- /.reviews-slider__name -->
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.reviews-slider -->
+        </div>
+        <div class="reviews-slider-after__arrows">
+          <button class="arrow arrow__left">
+            <img src="img/left.png" alt="">
+          </button>
+          <button class="arrow arrow__right">
+            <img src="img/right.png" alt="">
+          </button>
+        </div>
+        <!-- /.conteiner -->
+      </section>
+      <!-- /.section reviews -->
+      <div>
+        <div class="offer">
+          <div class="conteiner form-conteiner">
+            <div class="offer__block offer-block offer-block__price-bg">
+              <h2 class="offer__title">ИЩИТЕ ГДЕ ДЕШЕВЛЕ И ЛУЧШЕ?</h2>
+              <span class="offer__subtitle">Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле,
+                укажите ее -
+                и мы вам пересчитаем заказ с максимальной скидкой</span>
+              <form action="#" class="form offer__form">
+                <div class="form__row">
+                  <div class="form__group">
+                    <input type="text" class="input form__input" placeholder="Ваше имя">
+                  </div>
+                  <div class="form__group">
+                    <input type="tel" class="input form__input" placeholder="Ваш телефон">
+                  </div>
+                  <div class="form__group">
+                    <input type="text" class="input form__input" placeholder="Ваша цена">
+                  </div>
+                </div>
+                <div class="form__group reviews-button">
+                  <input type="submit" class="form__button button reviews-button__btn"
+                    value="Получить расчет со скидкой">
+                  <span class="reviews-button__text form__policy">Ваши данные надежно защищены. <br>
+                    Отправление заявки ни к чему не обязывает.</span>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- /.conteiner -->
+        </div>
+        <!-- /.offer -->
+      </div>
+      <!-- /.seaction -->
+      <seaction class="section factor" id="factor">
+        <div class="conteiner">
+          <h2 class="section-title section__title">О производстве</h2>
+          <!-- /.section-title section__title -->
+          <div class="factory-block">
+            <img src="img/about.png" alt="" class="factory-block__image">
+            <div class="factory-block__text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veniam cupiditate nesciunt sunt deleniti
+                fuga laudantium voluptas! Commodi beatae, velit nemo eius unde odit harum obcaecati facilis sunt dolor.
+                Soluta?
+              </p>
+              <br>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veniam cupiditate nesciunt sunt deleniti
+                fuga laudantium voluptas! Commodi beatae, velit nemo eius unde odit harum obcaecati facilis sunt dolor.
+                Soluta?
+              </p>
+            </div>
+            <!-- /.factory-block__text -->
+          </div>
+          <!-- /.factory-block -->
+        </div>
+        <!-- /.conteiner -->
+      </seaction>
+      <!-- /.section factor -->
+      <section class="section contacts" id="contacts">
+        <div class="conteiner">
+          <h2 class="section-title section__title">Контакты</h2>
+          <!-- /.section-title section__title -->
+          <div class="contacts-block">
+            <div class="contacts-block__item">
+              <img src="img/contacts-2.png" alt="" class="contacts-block__image">
+              <div class="contacts-block__text"><a href="#" class="contacts-block__link">+7 499 123-45-67</a></div>
+              <!-- /.contacts-block__text -->
+            </div>
+            <!-- /.contacts-block__item -->
+            <div class="contacts-block__item">
+              <img src="img/contacts-3.png" alt="" class="contacts-block__image">
+              <div class="contacts-block__text">Кошириское шоссе, д. 23, офис 345</div>
+              <!-- /.contacts-block__text -->
+            </div>
+            <!-- /.contacts-block__item -->
+            <div class="contacts-block__item">
+              <img src="img/contacts-1.png" alt="" class="contacts-block__image">
+              <div class="contacts-block__text"><a href="#" class="contacts-block__link">5404177@mail.ru</a></div>
+              <!-- /.contacts-block__text -->
+            </div>
+            <!-- /.contacts-block__item -->
+          </div>
+          <!-- /.contacts-block -->
+        </div>
+        <!-- /.conteiner -->
+      </section>
+      <!-- /.section contacts -->
+      <div class="map" id="map">
+      </div>
+      <section class="section questions">
+        <div class="conteiner">
+          <div class="questions-block">
+            <h3 class="questions-block__title">Остались вопросы?</h3>
+            <!-- /.questions__title -->
+            <a href="#" class="questions-block__link">Задайте их менеджеру</a>
+            <!-- /.questions-block__link -->
+          </div>
+          <!-- /.questions-block -->
+        </div>
+        <!-- /.conteiner -->
+      </section>
+      <!-- /.section questions -->
   </div>
   <!-- /.main -->
 
+  <footer class="footer">
+    <div class="conteiner">
+      <div class="footer-block">
+        <div class="footer-block__descrip">
+          <h4 class="footer-block__title">Фабрика Скинали №1</h4>
+          <span class="footer-block__subtitle">ведущий производитель скиали</span>
+          <span class="footer-block__copy">© Фабрика скинали №1</span>
+        </div>
+        <!-- /.footer-block__descrip -->
+        <div class="footer-block__pay-info">
+          <a href="" class="footer-block__pay-info"><img src="img/pay-1.png" alt="" class="footer-block__image"></a>
+          <a href="" class="footer-block__pay-info"><img src="img/pay-2.png" alt="" class="footer-block__image"></a>
+          <a href="" class="footer-block__pay-info"><img src="img/pay-3.png" alt="" class="footer-block__image"></a>
+          <a href="" class="footer-block__pay-info"><img src="img/pay-4.png" alt="" class="footer-block__image"></a>
+        </div>
+        <!-- /.footer-block__pay-info -->
+        <div class="footer-contacts">
+          <a href="#" class="footer-contacts__phone">+7 499 123-45-67</a>
+          <a href="#" class="footer-contacts__mail">5404177@mail.ru</a>
+          <div class="footer-social">
+            <a href="#" class="footer-social__link"><img src="img/social-1.png" alt="" class="footer-social__image"></a>
+            <a href="#" class="footer-social__link"><img src="img/social-2.png" alt="" class="footer-social__image"></a>
+            <a href="#" class="footer-social__link"><img src="img/social-3.png" alt="" class="footer-social__image"></a>
+          </div>
+        </div>
+        <!-- /.footer-block__contacts -->
+      </div>
+      <!-- /.footer-block -->
+    </div>
+    <!-- /.conteiner -->
+  </footer>
+  <!-- /.footer -->
 
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
   <script>
     $(function () {
       var link = $('.menu-btn');
@@ -583,6 +819,11 @@
       });
     });
   </script>
+  <script src="js/jquery.event.move.js"></script>
+  <script src="js/jquery.twentytwenty.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
 </body>
 
 </html>

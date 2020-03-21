@@ -16,11 +16,22 @@
      max-width: 50%;
      position: relative;
      box-shadow: 7px 5px 21px 0px rgba(0, 0, 0, 0.1);
+     overflow-y: hidden;
+
+     &:hover {
+       .catalog-card__buttons {
+         transform: translateY(0);
+         opacity: 1;
+       }
+     }
 
      &__buttons {
        position: absolute;
        bottom: 0;
        right: 0;
+       opacity: 0;
+       transition: 0.2s;
+       transform: translateY(100%);
      }
 
      &__tag {

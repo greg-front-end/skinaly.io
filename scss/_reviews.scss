@@ -1,0 +1,166 @@
+.reviews {
+  background-color: #f5f6f8;
+  height: 770px;
+
+  &-slider {
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-after {
+
+      &__arrows {
+        z-index: 0;
+        display: flex;
+        justify-content: space-between;
+        left: 0%;
+        top: 0%;
+        width: 0%;
+        transform: translateY(-100%);
+      }
+    }
+
+    &__item {
+      text-align: center;
+      margin: auto 20px;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      font-size: 13px;
+      font-style: italic;
+      align-items: center;
+      min-width: 90%;
+      height: 115px;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 15px;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 10px;
+        border: 10px solid transparent;
+        border-top: 10px solid #fff;
+      }
+    }
+
+    &__image {
+      display: block;
+      width: 70px;
+      height: 70px;
+      margin: 20px auto;
+    }
+  }
+
+  &-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+
+    &__btn {
+      width: 50%;
+    }
+
+    &__text {
+      width: 40%;
+    }
+  }
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &-left {
+    transform: translateX(-200%);
+    transform: translateX(200%);
+  }
+}
+
+@media (max-width: 968px) {
+  .reviews {
+
+
+    &-button {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      &__btn {
+        width: 100%;
+        padding: 0;
+      }
+
+      &__text {
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+  }
+
+  .offer {
+
+    &__subtitle {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 40px;
+      text-transform: lowercase;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .reviews {
+    height: 670px;
+
+    &-slider {
+      display: flex;
+      //flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      &-after {
+
+        &__arrows {
+          z-index: 1;
+          display: flex;
+          justify-content: space-between;
+          left: 0%;
+          top: 0%;
+          width: 0%;
+          transform: translateY(-100%);
+        }
+      }
+
+      &__item {
+        width: 100%;
+        text-align: center;
+        margin: auto 0px;
+      }
+
+      &__text {
+        font-size: 13px;
+        font-style: italic;
+        align-items: center;
+        height: 115px;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 15px;
+        position: relative;
+
+      }
+    }
+  }
+}
